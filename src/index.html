@@ -1,37 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <base href=''>
-    <meta charset="UTF-8">
-    <meta name="description" content="Solutions">
-    <meta http-equiv="Content-Language" content="pt-br">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="green">
-    <link rel='manifest' href='./manifest.json'>
-    <link rel="icon" sizes="192x192" href="./assets/icons/android/android-launchericon-192-192.png">
-    <link rel="icon" sizes="144x144" href="./assets/icons/android/android-launchericon-144-144.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/icons/ios/ios-appicon-76-76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/icons/ios/ios-appicon-120-120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/icons/ios/ios-appicon-152-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/ios/ios-appicon-180-180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/icons/android/android-launchericon-192-192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.ico">
+  <meta charset="utf-8">
+  <title>Mobile</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
 </head>
-
 <body>
-    <script>
-        if ('serviceWorker' in navigator) {
-            // navigator.serviceWorker.register('./sw.js')
-            //     .then(reg => console.info('SW registrado!', reg))
-            //     .catch(err => console.info('Erro', err))
-                navigator.serviceWorker.getRegistrations().then(function(registrations) { for(let registration of registrations) { registration.unregister() } })
-        } else {
-            console.log("Service Worker não é suportado");
-        }
-    </script>
-    <noscript>Sorry, your browser does not support JavaScript!</noscript>
-    <app-root></app-root>
+  <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
-
 </html>
